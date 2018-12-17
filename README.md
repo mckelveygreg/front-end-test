@@ -120,7 +120,7 @@ The following Hex codes represent our six official "Trifoia" colors:
 - ![#00acc8](https://placehold.it/15/00acc8/000000?text=+) `#00acc8`
 - ![#00acc8](https://placehold.it/15/00acc8/000000?text=+) `#00acc8`
 
-For the purposes of this exercise, use of these colors is **not allowed**. This is for your own protection, as well as to encourage creativity!
+For the purposes of this exercise, use of these colors is **not allowed**. This is for your own protection, as well as to encourage creativity! You are allowed to use slight variants of these colors, but these exact hex codes are off limits
 
 # Fonts
 `fira-sans` is the font family used by Trifoia branding. Just like the Trifoia colors, the Trifoia font family is also off limits for this exercise
