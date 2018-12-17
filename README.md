@@ -118,7 +118,7 @@ The following Hex codes represent our six official "Trifoia" colors:
 - ![#c2e76b](https://placehold.it/15/c2e76b/000000?text=+) `#c2e76b`
 - ![#00bc70](https://placehold.it/15/00bc70/000000?text=+) `#00bc70`
 - ![#00acc8](https://placehold.it/15/00acc8/000000?text=+) `#00acc8`
-- ![#00acc8](https://placehold.it/15/00acc8/000000?text=+) `#00acc8`
+- ![#0055b8](https://placehold.it/15/0055b8/000000?text=+) `#0055b8`
 
 For the purposes of this exercise, use of these colors is **not allowed**. This is for your own protection, as well as to encourage creativity! You are allowed to use slight variants of these colors, but these exact hex codes are off limits
 
