@@ -2,7 +2,7 @@
 Welcome to the Trifoia frontend developer test! This test is designed to be as open ended and enjoyable as possible, so remember to have fun with it!
 
 # Task
-Your task will be to recreate the Trifoia Careers page, under the following guidelines. Please be sure to read this _entire_ README before beginning!
+Your task will be to recreate the [Trifoia Careers page](https://trifoia.com/careers), under the following guidelines. Please be sure to read this _entire_ README before beginning!
 1. You will be provided with the copy to add to the page
 2. You are _not_ allowed to use the official Trifoia colors (other than in the trifoia logo)
 3. You are _not_ allowed to use the official Trifoia font family (fira-sans)
@@ -101,7 +101,7 @@ Implement your own dummy contact form with the following fields
 ## Footer
 The footer should have the following copyright text:
 ```
-© 2017 Trifoia. All rights reserved.
+© 2018 Trifoia. All rights reserved.
 ```
 
 As well as links to the following pages:
@@ -113,12 +113,12 @@ As well as links to the following pages:
 
 # Colors
 The following Hex codes represent our six official "Trifoia" colors:
-- `#ff4d00`
-- `#ffa400`
-- `#c2e76b`
-- `#00bc70`
-- `#00acc8`
-- `#0055b8`
+- ![#ff4d00](https://placehold.it/15/ff4d00/000000?text=+) `#ff4d00`
+- ![#ffa400](https://placehold.it/15/ffa400/000000?text=+) `#ffa400`
+- ![#c2e76b](https://placehold.it/15/c2e76b/000000?text=+) `#c2e76b`
+- ![#00bc70](https://placehold.it/15/00bc70/000000?text=+) `#00bc70`
+- ![#00acc8](https://placehold.it/15/00acc8/000000?text=+) `#00acc8`
+- ![#00acc8](https://placehold.it/15/00acc8/000000?text=+) `#00acc8`
 
 For the purposes of this exercise, use of these colors is **not allowed**. This is for your own protection, as well as to encourage creativity!
 
@@ -137,4 +137,4 @@ If building / running / looking at your work requires any special tools or steps
 Fill in with your own build instructions
 
 # Notes
-Fill in with your own notes
+Fill in with your own notes / feedback
