@@ -137,4 +137,11 @@ If building / running / looking at your work requires any special tools or steps
 Fill in with your own build instructions
 
 # Notes
-Fill in with your own notes / feedback
+TODO:
+- [ ] Implement "Cool words"
+- [ ] Check accessibility
+  - [ ] color blind
+  - [ ] screen reader
+- [ ] Responsive
+- [ ] Make build instructions
+- [ ] Host on github pages
