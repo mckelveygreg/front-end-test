@@ -1,31 +1,41 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import styled from 'styled-components'
+import Separator from './separator'
 
-const NavItem = styled.li`
-  display: inline-block;
-  margin-right: 1rem;
-`
 const NavList = styled.ul`
   list-style: none;
   margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 600px;
+`
+const NavLi = styled.li`
+  display: inline-block;
+  margin-right: 1rem;
+`
+const Link = styled.a`
+  color: #2b2b2b;
+  text-decoration: none;
 `
 const ListLink = props => (
-  <NavItem>
-    <Link
-      to={props.to}
-      activeStyle={{ background: '#2b2b2b', color: 'white' }}
-      style={{ color: '#2b2b2b', textDecoration: 'none' }}
-    >
-      {props.children}
-    </Link>
-  </NavItem>
+  <NavLi>
+    <Link href={props.to}>{props.children}</Link>
+  </NavLi>
 )
 
 const Navbar = () => (
   <div>
     <NavList>
-      <ListLink to="/">Home</ListLink>
+      <ListLink to="https://trifori.com/who-we-are">Who We Are</ListLink>
+      <Separator />
+      <ListLink to="https://trifori.com/what-we-do">What We Do</ListLink>
+      <Separator />
+      <ListLink to="https://trifori.com/how-we-do-it">How We Do It</ListLink>
+      <Separator />
+      <ListLink to="https://trifori.com/whats-happening">
+        What's Happening
+      </ListLink>
     </NavList>
   </div>
 )

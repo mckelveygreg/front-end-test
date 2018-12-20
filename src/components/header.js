@@ -1,15 +1,14 @@
-import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
 import Navbar from './navbar'
 import trifoiaLogo from '../images/trifoia-full-color-rgb.png'
+import Contact from './contact';
 
 const HeaderStyled = styled.header`
-  margin: 1.45rem;
-  max-width: 960;
+  margin: 1.45rem auto;
+  max-width: 960px;
   padding: 1.5rem 1rem;
-  text-align: center;
 `
 const Trifoia = styled.img`
   max-width: 250px;
@@ -17,15 +16,10 @@ const Trifoia = styled.img`
 
 const Header = ({ siteTitle }) => (
   <HeaderStyled>
-    <Link
-      to="https://trifoia.com"
-      style={{
-        color: 'blue',
-        textDecoration: 'none',
-      }}
-    >
+    <a href="https://trifoia.com">
       <Trifoia src={trifoiaLogo} alt="Trifoia" />
-    </Link>
+    </a>
+    <Contact />
     <Navbar />
   </HeaderStyled>
 )
