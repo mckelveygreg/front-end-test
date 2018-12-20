@@ -138,6 +138,11 @@ Fill in with your own build instructions
 
 # Notes
 TODO:
+- [ ] Header
+- [ ] Body
+- [ ] Footer
+- [ ] Colors
+- [ ] Font
 - [ ] Implement "Cool words"
 - [ ] Check accessibility
   - [ ] color blind
