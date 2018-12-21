@@ -3,6 +3,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import ContactForm from '../components/contactForm' 
 
 const IndexPage = () => (
   <StaticQuery
@@ -18,6 +19,7 @@ const IndexPage = () => (
         <Layout>
           <SEO title="Home" keywords={['gatsby', 'application', 'react']} />
           <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html}} />
+          <ContactForm />
         </Layout>
       </>
     )}
