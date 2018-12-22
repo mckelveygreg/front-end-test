@@ -1,5 +1,5 @@
 import React from 'react'
-import { Formik, Form, Field, ErrorMessage } from 'formik'
+import { Formik, Form, Field } from 'formik'
 import * as yup from 'yup'
 import styled from 'styled-components'
 
@@ -21,8 +21,9 @@ const StyledForm = styled(Form)`
     width: 250px;
   }
   button {
-    justify-items: center;
-    width: 100px
+    margin: 0 auto;
+    width: 75%;
+    grid-column: 1 / 3;
   }
 `
 
