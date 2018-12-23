@@ -4,15 +4,26 @@ import styled from 'styled-components'
 const StyledFooter = styled.footer`
   display: flex;
   justify-content: space-between;
-
+  padding: 1rem 2rem;
+  background: #202121;
+  color: #ccc;
+  
   .footerLinks {
     display: flex;
     flex-direction: column;
+    a {
+      text-decoration: none;
+      color: #ccc;
+      font-size: 1rem;
+    }
   }
-
+  
   .footerCopyright {
+    font-size: 1rem;
     text-align: right;
+    margin-top: auto;
   }
+    
 `
 
 const Footer = () => (

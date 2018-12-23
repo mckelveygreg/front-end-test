@@ -6,12 +6,15 @@ import trifoiaLogo from '../images/trifoia-full-color-rgb.png'
 import Contact from './contact';
 
 const HeaderStyled = styled.header`
-  margin: 1.45rem auto;
-  max-width: 960px;
-  padding: 1.5rem 1rem;
+  margin: 0 auto;
+  padding-top: 2rem;
+  position: sticky;
+  top: 0;
+  background: white;
 `
 const Trifoia = styled.img`
   max-width: 250px;
+  margin-left: 15%;
 `
 
 const Header = ({ siteTitle }) => (

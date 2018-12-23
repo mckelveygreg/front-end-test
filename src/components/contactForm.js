@@ -8,22 +8,33 @@ import styled from 'styled-components'
 // `
 const StyledForm = styled(Form)`
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
   grid-gap: 10px;
+  padding: 2rem;
 
   textarea {
     height: 100px;
+    border-radius: 5px;
+    font-family: inherit;
+    font-weight: bold;
   }
   label {
     text-align: right;
   }
   input {
     width: 250px;
+    border-radius: 5px;
   }
   button {
     margin: 0 auto;
-    width: 75%;
+    width: 250px;
     grid-column: 1 / 3;
+    background: #2b2b2b;
+    border: none;
+    height: 3rem;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px #333;
+    color: white;
   }
 `
 
@@ -61,6 +72,7 @@ const ContactForm = ({ className }) => {
               component="textarea"
               name="message"
               placeholder="I love learning! ;)"
+              required
             />
 
             <label>Upload Resume =></label>

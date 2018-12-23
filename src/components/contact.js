@@ -14,6 +14,7 @@ const ContactContainer = styled.div`
   align-items: center;
   grid-template-columns: repeat(3, auto);
   grid-gap: 10px;
+  margin-right: 10%;
 `
 const A = styled.a`
    text-decoration: none;
@@ -32,21 +33,21 @@ const SocMeds = () => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      <FontAwesomeIcon icon={faFacebook} />
+      <FontAwesomeIcon icon={faFacebook} color="#3b5998"/>
     </A>
     <A
       href="https://www.linkedin.com/company/trifoia/"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <FontAwesomeIcon icon={faLinkedin} />
+      <FontAwesomeIcon icon={faLinkedin} color="#0077B5"/>
     </A>
     <A
       href="https://twitter.com/TeamTrifoia"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <FontAwesomeIcon icon={faTwitter} />
+      <FontAwesomeIcon icon={faTwitter} color="#38A1F3"/>
     </A>
   </div>
 )
@@ -54,7 +55,7 @@ const SocMeds = () => (
 const Contact = () => {
   return (
     <ContactContainer>
-      <a href="https://trifoia.com/say-hello">Say Hello</a>
+      <A href="https://trifoia.com/say-hello">Say Hello</A>
       <Separator />
       <SocMeds />
     </ContactContainer>
