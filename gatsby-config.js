@@ -3,6 +3,7 @@ module.exports = {
     title: 'Trifoia Front-end Dev Test',
     description: "A CSS-garden esque project for testing front end developers",
     author: 'Greg McKelvey',
+    siteUrl: 'https://mckelveygreg.github.io/front-end-test/'
   },
   pathPrefix: '/front-end-test',
   plugins: [
@@ -25,7 +26,7 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-
+    'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

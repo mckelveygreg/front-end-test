@@ -61,24 +61,25 @@ const ContactForm = ({ className }) => {
           <StyledForm>
             <label htmlFor="name">Full Name:</label>
             <Field id="name" type="text" name="name" required />
-            <label>Email:</label>
-            <Field type="email" name="email" label="Email" required />
+            <label htmlFor="email">Email:</label>
+            <Field id="email" type="email" name="email" label="Email" required />
             {/* <ErrorMessage className="error" name="email" component={Error} /> */}
-            <label>Phone Number:</label>
-            <Field type="phone" name="phone" />
+            <label htmlFor="phone">Phone Number:</label>
+            <Field id="phone" type="phone" name="phone" />
             {/* <ErrorMessage name="phone" component="div" /> */}
-            <label>Anything you would like us to know?</label>
+            <label htmlFor="message">Anything you would like us to know?</label>
             <Field
+            id="message"
               component="textarea"
               name="message"
               placeholder="I love learning! ;)"
               required
             />
 
-            <label>Upload Resume</label>
-            <input type="file" required />
-            <label>Upload Cover Letter</label>
-            <input type="file" required />
+            <label htmlFor="resume">Upload Resume</label>
+            <input id="resume" type="file" name="resume" required />
+            <label htmlFor="coverLetter">Upload Cover Letter</label>
+            <input id="coverLetter" name="coverLetter" type="file" required />
             {/* <ErrorMessage name="message" component="div" /> */}
 
             <button type="submit" disabled={isSubmitting}>
