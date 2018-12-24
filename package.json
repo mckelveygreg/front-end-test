@@ -36,10 +36,12 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "dev-m": "gatsby develop -H 0.0.0.0 -p 8000",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "prettier": "^1.15.2"
   },
   "repository": {
