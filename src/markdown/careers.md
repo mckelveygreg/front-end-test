@@ -1,7 +1,7 @@
 # Work with Trifoia
 ## About Trifoia
-Trifoia is an equal opportunity employer committed to cultural diversity. Trifoia encourages all qualified individuals to apply, and does not discriminate on the basis of any protected status, including race, gender, veteran and disability status.
-
+Trifoia is an equal opportunity employer committed to cultural diversity. Trifoia encourages all qualified individuals to apply, and does not discriminate on the basis of any protected status, including race, gender, veteran and disability status. \
+\
 Trifoia is proud to offer a robust benefits package to eligible employees, including health insurance, retirement plans and paid time off.
 ---
 ## Current Open Positions
@@ -50,8 +50,8 @@ Skills and Qualifications:
 To Apply:
 This position is OPEN UNTIL FILLED
 
-Please fill out the form below to apply. Don’t forget to attach your resume, cover letter and provide a link to your portfolio.
-
+Please fill out the form below to apply. Don’t forget to attach your *resume, cover letter and provide a link to your portfolio.*\
+\
 If you are selected for the candidate pool you will be asked to complete a skills assessment.
 ---
 ## Interested?
