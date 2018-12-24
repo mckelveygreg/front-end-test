@@ -75,9 +75,9 @@ const ContactForm = ({ className }) => {
               required
             />
 
-            <label>Upload Resume =></label>
+            <label>Upload Resume</label>
             <input type="file" required />
-            <label>Upload Cover Letter =></label>
+            <label>Upload Cover Letter</label>
             <input type="file" required />
             {/* <ErrorMessage name="message" component="div" /> */}
 
