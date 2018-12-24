@@ -9,6 +9,12 @@ const NavList = styled.ul`
   align-items: center;
   justify-content: space-evenly;
   max-width: 600px;
+  padding: 0;
+  padding-bottom: 1rem;
+
+  @media (max-width: 800px) {
+    flex-direction: column; 
+  }
 `
 const NavLi = styled.li`
   display: inline-block;

@@ -52,6 +52,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     background-image: url(${background});
     background-size: cover;
+    box-sizing: border-box;
   }
 
   p,
@@ -80,6 +81,11 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
+  }
+  @media (max-width: 800px) {
+    label, textarea, input, button {
+      font-size:1rem;
+    }
   }
 `
 

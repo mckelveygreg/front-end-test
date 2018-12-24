@@ -7,6 +7,11 @@ const SeparatorHr = styled.hr`
   background: linear-gradient(to right, #fff, #00000000, #00000000, #fff),
     linear-gradient(#fff, #00000000, #fff), linear-gradient(#7497E1, #7497E1);
   border: none;
+
+  @media (max-width: 800px) {
+    width: 80%;
+    height: 1px;
+  }
 `
 
 const Separator = () => (

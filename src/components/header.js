@@ -11,10 +11,19 @@ const HeaderStyled = styled.header`
   position: sticky;
   top: 0;
   background: white;
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 `
 const Trifoia = styled.img`
   max-width: 250px;
   margin-left: 15%;
+
+  @media (max-width: 800px) {
+    margin: 0 auto;
+  }
 `
 
 const Header = ({ siteTitle }) => (

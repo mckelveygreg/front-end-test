@@ -1,5 +1,14 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
+import styled from 'styled-components' 
+
+const StyledCareers = styled.div`
+  padding: 0 2rem;
+
+  @media (max-width: 800px) {
+    padding: 0;
+  }
+`
 
 const Careers = () => (
   <StaticQuery
@@ -11,8 +20,7 @@ const Careers = () => (
       }
     `}
     render={data => (
-      <div
-        style={{ padding: '0 2rem' }}
+      <StyledCareers
         dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
       />
     )}

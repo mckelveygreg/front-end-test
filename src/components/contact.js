@@ -15,6 +15,10 @@ const ContactContainer = styled.div`
   grid-template-columns: repeat(3, auto);
   grid-gap: 10px;
   margin-right: 10%;
+
+  @media (max-width: 800px) {
+    margin: 0 auto;
+  }
 `
 const A = styled.a`
    text-decoration: none;
@@ -23,6 +27,9 @@ const A = styled.a`
 
   & svg {
     font-size: 3rem;
+    @media (max-width: 800px) {
+      font-size: 2rem;
+    }
   }
 `
 // TODO: install fa-icons
