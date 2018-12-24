@@ -6,7 +6,7 @@ const StyledCareers = styled.div`
   padding: 0 2rem;
 
   @media (max-width: 800px) {
-    padding: 0;
+    padding: 1rem;
   }
 `
 

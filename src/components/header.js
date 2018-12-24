@@ -15,6 +15,11 @@ const HeaderStyled = styled.header`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: initial;
+
+    & > a {
+      margin: 0 auto;
+    }
   }
 `
 const Trifoia = styled.img`
