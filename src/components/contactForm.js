@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Formik, Form, Field } from 'formik'
 import * as yup from 'yup'
 import styled from 'styled-components'
@@ -25,6 +25,9 @@ const StyledForm = styled(Form)`
     width: 250px;
     border-radius: 5px;
   }
+  .invalid {
+    background: #ff000055;
+  }
   button {
     margin: 0 auto;
     width: 250px;
@@ -35,19 +38,29 @@ const StyledForm = styled(Form)`
     border-radius: 5px;
     box-shadow: 0px 1px 5px #333;
     color: white;
+    cursor: pointer;
+
+    :disabled {
+      background-color: #aaa;
+    }
   }
 `
 
-const ContactForm = ({ className }) => {
-  return (
+class ContactForm extends Component {
+  state = {
+    formSubmitted: false,
+  }
+  
+  render() {
+    return (
     <div>
-      <Formik
-        className={className}
+      {!this.state.formSubmitted ? <Formik
         initialValues={{
           name: '',
           email: '',
           phone: '',
           message: '',
+         
         }}
         validationSchema={yup.object().shape({
           name: yup.string().required('IDENTIFY YOURSELF!'),
@@ -55,21 +68,50 @@ const ContactForm = ({ className }) => {
             .string()
             .email("We can't hire you without a proper email")
             .required("We can't hire you without a proper email"),
+          message: yup.string().required("Don't you have anything to tell us?"),
         })}
-        onSubmit
-        render={({ values, touched, errors, dirty, isSubmitting }) => (
-          <StyledForm>
+        onSubmit={(values, actions) => {
+          console.log('Form submitted')
+          console.log(values)
+          console.log(actions)
+          this.setState({formSubmitted: true})          
+        }}
+        render={({
+          values,
+          touched,
+          errors,
+          dirty,
+          isSubmitting,
+          handleSubmit,
+          isValid,
+          setFieldValue,
+        }) => (
+          <StyledForm onSubmit={handleSubmit} onSubmitCapture={handleSubmit}>
             <label htmlFor="name">Full Name:</label>
-            <Field id="name" type="text" name="name" required />
+            <Field
+              className={touched.name && errors.name ? 'invalid' : ''}
+              id="name"
+              type="text"
+              name="name"
+              required
+            />
             <label htmlFor="email">Email:</label>
-            <Field id="email" type="email" name="email" label="Email" required />
+            <Field
+              className={touched.email && errors.email ? 'invalid' : ''}
+              id="email"
+              type="email"
+              name="email"
+              label="Email"
+              required
+            />
             {/* <ErrorMessage className="error" name="email" component={Error} /> */}
             <label htmlFor="phone">Phone Number:</label>
             <Field id="phone" type="phone" name="phone" />
             {/* <ErrorMessage name="phone" component="div" /> */}
             <label htmlFor="message">Anything you would like us to know?</label>
             <Field
-            id="message"
+              className={touched.message && errors.message ? 'invalid' : ''}
+              id="message"
               component="textarea"
               name="message"
               placeholder="I love learning! ;)"
@@ -77,19 +119,38 @@ const ContactForm = ({ className }) => {
             />
 
             <label htmlFor="resume">Upload Resume</label>
-            <input id="resume" type="file" name="resume" required />
+            <input
+              id="resume"
+              type="file"
+              name="resume"
+              required
+              onChange={event => {
+                setFieldValue('resume', event.currentTarget.files[0])
+              }}
+            />
             <label htmlFor="coverLetter">Upload Cover Letter</label>
-            <input id="coverLetter" name="coverLetter" type="file" required />
+            <input
+              id="coverLetter"
+              name="coverLetter"
+              type="file"
+              required
+              onChange={event => {
+                console.log(event.currentTarget)
+                setFieldValue('coverLetter', event.currentTarget.files[0])
+              }}
+            />
             {/* <ErrorMessage name="message" component="div" /> */}
-
-            <button type="submit" disabled={isSubmitting}>
+            <button type="submit" disabled={isSubmitting || !isValid}>
               Submit
             </button>
+            {console.log(values)}
           </StyledForm>
         )}
-      />
+      /> :
+      <h2 style={{textAlign: 'center'}}>Thanks for your submission!</h2>}
     </div>
   )
+            }
 }
 
 export default ContactForm
