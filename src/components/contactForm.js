@@ -3,9 +3,6 @@ import { Formik, Form, Field } from 'formik'
 import * as yup from 'yup'
 import styled from 'styled-components'
 
-// const Error = styled.div`
-//   color: red;
-// `
 const StyledForm = styled(Form)`
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -53,11 +50,11 @@ class ContactForm extends Component {
 
   render() {
     function validateFile(value) {
-      let error;
+      let error
       if (value === undefined) {
-        error = 'No file!';
+        error = 'No file!'
       }
-      return error;
+      return error
     }
     return (
       <div>
@@ -156,7 +153,6 @@ class ContactForm extends Component {
                     setFieldValue('coverLetter', event.currentTarget.files[0])
                   }}
                   validate={validateFile}
-
                 />
                 {/* <ErrorMessage name="message" component="div" /> */}
                 <button type="submit" disabled={isSubmitting || !isValid}>

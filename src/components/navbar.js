@@ -13,7 +13,7 @@ const NavList = styled.ul`
   padding-bottom: 1rem;
 
   @media (max-width: 800px) {
-    flex-direction: column; 
+    flex-direction: column;
   }
 `
 const NavLi = styled.li`

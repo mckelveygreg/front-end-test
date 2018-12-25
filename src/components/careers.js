@@ -1,6 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import styled from 'styled-components' 
+import styled from 'styled-components'
 
 const StyledCareers = styled.div`
   padding: 0 2rem;

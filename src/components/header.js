@@ -3,7 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Navbar from './navbar'
 import trifoiaLogo from '../images/trifoia-full-color-rgb.png'
-import Contact from './contact';
+import Contact from './contact'
 
 const HeaderStyled = styled.header`
   margin: 0 auto;
@@ -31,7 +31,7 @@ const Trifoia = styled.img`
   }
 `
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <HeaderStyled>
     <a href="https://trifoia.com">
       <Trifoia src={trifoiaLogo} alt="Trifoia" />
@@ -40,13 +40,5 @@ const Header = ({ siteTitle }) => (
     <Navbar />
   </HeaderStyled>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: '',
-}
 
 export default Header

@@ -2,11 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import styled, { createGlobalStyle } from 'styled-components'
-
 import Header from './header'
-//import './layout.css'
 import Footer from './footer'
-import background from '../images/background.svg' 
+import background from '../images/background.svg'
 
 const StyledLayout = styled.div`
   margin: 0 auto;
@@ -27,8 +25,8 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-      <GlobalStyle />
-          <Header siteTitle={data.site.siteMetadata.title} />
+        <GlobalStyle />
+        <Header />
         <StyledLayout>
           {children}
           <Footer />

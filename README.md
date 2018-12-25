@@ -138,15 +138,19 @@ Fill in with your own build instructions
 
 # Notes
 TODO:
-- [ ] Header
-- [ ] Body
-- [ ] Footer
-- [ ] Colors
-- [ ] Font
-- [ ] Implement "Cool words"
-- [ ] Check accessibility
-  - [ ] color blind
-  - [ ] screen reader
-- [ ] Responsive
+- [x] Header
+- [x] Body
+- [x] Footer
+- [x] Colors
+  - #7497E1
+  - #6CEB74
+  - #FFAA33
+  - #202121
+- [x] Font
+- [x] Implement "Cool words"
+- [x] Check accessibility
+  - [x] color blind
+  - [x] screen reader
+- [x] Responsive
 - [ ] Make build instructions
-- [ ] Host on github pages
+- [x] Host on github pages

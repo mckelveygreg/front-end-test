@@ -21,7 +21,7 @@ const ContactContainer = styled.div`
   }
 `
 const A = styled.a`
-   text-decoration: none;
+  text-decoration: none;
   color: black;
   margin: 10px;
 
@@ -32,7 +32,6 @@ const A = styled.a`
     }
   }
 `
-// TODO: install fa-icons
 const SocMeds = () => (
   <div className="socMeds">
     <A
@@ -40,21 +39,21 @@ const SocMeds = () => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      <FontAwesomeIcon icon={faFacebook} color="#3b5998"/>
+      <FontAwesomeIcon icon={faFacebook} color="#3b5998" />
     </A>
     <A
       href="https://www.linkedin.com/company/trifoia/"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <FontAwesomeIcon icon={faLinkedin} color="#0077B5"/>
+      <FontAwesomeIcon icon={faLinkedin} color="#0077B5" />
     </A>
     <A
       href="https://twitter.com/TeamTrifoia"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <FontAwesomeIcon icon={faTwitter} color="#38A1F3"/>
+      <FontAwesomeIcon icon={faTwitter} color="#38A1F3" />
     </A>
   </div>
 )
