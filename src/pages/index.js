@@ -6,13 +6,22 @@ import ContactForm from '../components/contactForm'
 import Careers from '../components/careers'
 
 const IndexPage = () => (
-
-        <Layout>
-          <SEO title="Home" keywords={['gatsby', 'application', 'react']} />
-          <Careers />
-          <ContactForm />
-        </Layout>
-
+  <Layout>
+    <SEO
+      title="Careers"
+      keywords={[
+        'gatsby',
+        'application',
+        'react',
+        'trifoia',
+        'front-end',
+        'web dev',
+        'test',
+      ]}
+    />
+    <Careers />
+    <ContactForm />
+  </Layout>
 )
 
 export default IndexPage
