@@ -157,9 +157,9 @@ gatsby serve
 ```
 
 # Project structure
-For this project, I just the static site generator [Gatsby](https://gatsbyjs.org). Gatsby lets you build in React, and then generates an optimized static build of your HTML, CSS, and Javascript./
-To implement the body, I imported the provided markdown copy with GraphQL. 
-The page lives in src/pages/index.js, but I broke everything down in to separate and potentially reusable components. The global styles are found in src/components/layout.js, which is a page wrapper that can be used to maintain consistent style.
+For this project, I used the static site generator [Gatsby](https://gatsbyjs.org). Gatsby lets you build in React, and then generates an optimized static build of your HTML, CSS, and Javascript.  
+To implement the body, I imported the provided markdown copy with GraphQL.  
+The page lives in src/pages/index.js, but I broke everything down into separate and potentially reusable components. The global styles are found in src/components/layout.js, which is a page wrapper that can be used to maintain consistent style.  
 For styling, I used the CSS-in-JS solution [Styled-Components](https://mckelveygreg.github.io/front-end-test/). The non-global styles will be found in each component file, written in a scss or less style of nesting selectors. 
 
 
@@ -179,5 +179,5 @@ TODO:
   - [x] color blind
   - [x] screen reader
 - [x] Responsive
-- [ ] Make build instructions
+- [x] Make build instructions
 - [x] Host on github pages
