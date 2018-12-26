@@ -134,7 +134,34 @@ Submission of materials will be conducted through Git, to show that you have som
 If building / running / looking at your work requires any special tools or steps, list those below. There is also space for any notes or feedback you would like to give
 
 # Building
-Fill in with your own build instructions
+[View the live site hosted on Github Pages](https://mckelveygreg.github.io/front-end-test/)
+
+`npm install`
+
+To start a development server, either 
+`npm run develop`
+or
+```
+npm i -g gatsby-cli
+gatsby develop
+```
+To make and serve a production build, either
+```
+npm run build
+npm run serve
+```
+or
+```
+gatsby build
+gatsby serve
+```
+
+# Project structure
+For this project, I just the static site generator [Gatsby](https://gatsbyjs.org). Gatsby lets you build in React, and then generates an optimized static build of your HTML, CSS, and Javascript./
+To implement the body, I imported the provided markdown copy with GraphQL. 
+The page lives in src/pages/index.js, but I broke everything down in to separate and potentially reusable components. The global styles are found in src/components/layout.js, which is a page wrapper that can be used to maintain consistent style.
+For styling, I used the CSS-in-JS solution [Styled-Components](https://mckelveygreg.github.io/front-end-test/). The non-global styles will be found in each component file, written in a scss or less style of nesting selectors. 
+
 
 # Notes
 TODO:
