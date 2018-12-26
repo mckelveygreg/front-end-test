@@ -33,13 +33,13 @@ const ListLink = props => (
 const Navbar = () => (
   <div>
     <NavList>
-      <ListLink to="https://trifori.com/who-we-are">Who We Are</ListLink>
+      <ListLink to="https://trifoia.com/who-we-are">Who We Are</ListLink>
       <Separator />
-      <ListLink to="https://trifori.com/what-we-do">What We Do</ListLink>
+      <ListLink to="https://trifoia.com/what-we-do">What We Do</ListLink>
       <Separator />
-      <ListLink to="https://trifori.com/how-we-do-it">How We Do It</ListLink>
+      <ListLink to="https://trifoia.com/how-we-do-it">How We Do It</ListLink>
       <Separator />
-      <ListLink to="https://trifori.com/whats-happening">
+      <ListLink to="https://trifoia.com/whats-happening">
         What's Happening
       </ListLink>
     </NavList>

@@ -32,7 +32,7 @@ const Footer = () => {
       <div className="footerLinks">
         <a href="https://trifoia.com/terms-of-use">Terms of Use</a>
         <a href="https://trifoia.com/privacy-policy">Privacy Policy</a>
-        <a href="https://trifoia.com/coi-policy">COI Policy</a>
+        <a href="https://trifoia.com/conflict-of-interest">COI Policy</a>
         <Link to="/">Careers</Link>
         <a href="https://trifoia.com/projects">Projects</a>
       </div>
