@@ -78,6 +78,10 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.5rem;
   }
 
+  a:hover {
+    text-decoration: underline !important;
+  }
+
   body {
   }
   @media (max-width: 800px) {
