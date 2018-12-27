@@ -19,6 +19,12 @@ const NavList = styled.ul`
 const NavLi = styled.li`
   display: inline-block;
   margin-right: 1rem;
+  padding: .3rem;
+
+  &:hover {
+    background: #FFAA33aa;
+    border-radius: 3px;
+  }
 `
 const Link = styled.a`
   color: #2b2b2b;
