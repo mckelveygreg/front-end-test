@@ -5,6 +5,7 @@ import styled, { createGlobalStyle } from 'styled-components'
 import Header from './header'
 import Footer from './footer'
 import background from '../images/background.svg'
+import { Spring } from 'react-spring'
 
 const StyledLayout = styled.div`
   margin: 0 auto;
@@ -26,11 +27,17 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <GlobalStyle />
-        <Header />
-        <StyledLayout>
-          {children}
-          <Footer />
-        </StyledLayout>
+        <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
+          {props => (
+            <div style={props}>
+              <Header />
+              <StyledLayout>
+                {children}
+                <Footer />
+              </StyledLayout>
+            </div>
+          )}
+        </Spring>
       </>
     )}
   />
