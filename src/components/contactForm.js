@@ -113,12 +113,11 @@ class ContactForm extends Component {
                   id="email"
                   type="email"
                   name="email"
-                  label="Email"
                   required
                 />
                 {/* <ErrorMessage className="error" name="email" component={Error} /> */}
                 <label htmlFor="phone">Phone Number:</label>
-                <Field id="phone" type="phone" name="phone" />
+                <Field id="phone" type="tel" name="phone" />
                 {/* <ErrorMessage name="phone" component="div" /> */}
                 <label htmlFor="message">
                   Anything you would like us to know?
