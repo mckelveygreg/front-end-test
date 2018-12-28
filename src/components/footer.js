@@ -16,6 +16,10 @@ const StyledFooter = styled.footer`
       text-decoration: none;
       color: #ccc;
       font-size: 1rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 

@@ -20,6 +20,7 @@ const NavLi = styled.li`
   display: inline-block;
   margin-right: 1rem;
   padding: .3rem;
+  transition: .5s ease;
 
   &:hover, &:active {
     background: #FFAA33aa;

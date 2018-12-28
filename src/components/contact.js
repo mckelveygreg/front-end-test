@@ -25,6 +25,10 @@ const A = styled.a`
   color: black;
   margin: 10px;
 
+  &:hover {
+    text-decoration: underline;
+  }
+
   & svg {
     font-size: 3rem;
     @media (max-width: 800px) {

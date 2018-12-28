@@ -49,13 +49,13 @@ class ContactForm extends Component {
   }
 
   render() {
-    function validateFile(value) {
-      let error
-      if (value === undefined) {
-        error = 'No file!'
-      }
-      return error
-    }
+    // function validateFile(value) {
+    //   let error
+    //   if (value === undefined) {
+    //     error = 'No file!'
+    //   }
+    //   return error
+    // }
     return (
       <div>
         {!this.state.formSubmitted ? (
@@ -141,7 +141,7 @@ class ContactForm extends Component {
                   onChange={event => {
                     setFieldValue('resume', event.currentTarget.files[0])
                   }}
-                  validate={validateFile}
+                  // validate={validateFile}
                 />
                 <label htmlFor="coverLetter">Upload Cover Letter</label>
                 <input
@@ -152,7 +152,7 @@ class ContactForm extends Component {
                   onChange={event => {
                     setFieldValue('coverLetter', event.currentTarget.files[0])
                   }}
-                  validate={validateFile}
+                  // validate={validateFile}
                 />
                 {/* <ErrorMessage name="message" component="div" /> */}
                 <button type="submit" disabled={isSubmitting || !isValid}>

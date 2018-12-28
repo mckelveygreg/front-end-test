@@ -35,8 +35,8 @@ const Header = () => (
     <a href="https://trifoia.com">
       <Spring
         delay="1500"
-        from={{ maxWidth: '375px', marginLeft: '30%' }}
-        to={{ maxWidth: '250px', marginLeft: '15%' }}
+        from={{ maxWidth: '350px' }}
+        to={{ maxWidth: '250px'}}
       >
         {props => <Trifoia style={props} src={trifoiaLogo} alt="Trifoia" />}
       </Spring>
