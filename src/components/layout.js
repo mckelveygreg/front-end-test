@@ -27,7 +27,7 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <GlobalStyle />
-        <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
+        <Spring config="slow" from={{ opacity: 0 }} to={{ opacity: 1 }}>
           {props => (
             <div style={props}>
               <Header />

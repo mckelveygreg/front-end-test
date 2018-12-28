@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Navbar from './navbar'
 import trifoiaLogo from '../images/trifoia-full-color-rgb.png'
 import Contact from './contact'
+import { Spring } from 'react-spring'
 
 const HeaderStyled = styled.header`
   margin: 0 auto;
@@ -22,7 +23,6 @@ const HeaderStyled = styled.header`
   }
 `
 const Trifoia = styled.img`
-  max-width: 250px;
   margin-left: 15%;
 
   @media (max-width: 800px) {
@@ -33,7 +33,13 @@ const Trifoia = styled.img`
 const Header = () => (
   <HeaderStyled>
     <a href="https://trifoia.com">
-      <Trifoia src={trifoiaLogo} alt="Trifoia" />
+      <Spring
+        delay="1500"
+        from={{ maxWidth: '375px', marginLeft: '30%' }}
+        to={{ maxWidth: '250px', marginLeft: '15%' }}
+      >
+        {props => <Trifoia style={props} src={trifoiaLogo} alt="Trifoia" />}
+      </Spring>
     </a>
     <Contact />
     <Navbar />
