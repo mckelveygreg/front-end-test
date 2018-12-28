@@ -78,7 +78,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.5rem;
   }
 
-  a:hover {
+  a:hover, a:active {
     text-decoration: underline !important;
   }
 

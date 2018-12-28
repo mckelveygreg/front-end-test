@@ -21,7 +21,7 @@ const NavLi = styled.li`
   margin-right: 1rem;
   padding: .3rem;
 
-  &:hover {
+  &:hover, &:active {
     background: #FFAA33aa;
     border-radius: 3px;
   }
